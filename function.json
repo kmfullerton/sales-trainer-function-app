@@ -23,6 +23,30 @@
         "name": "res2",
         "type": "http",
         "direction": "out"
+      },
+      {
+        "name": "GetPersonas",
+        "type":"httpTrigger",
+        "direction":"in",
+        "methods":["get"],
+        "route": "endpoint3"
+      },
+      {
+        "name": "personas",
+        "type": "http",
+        "direction": "out"
+      },
+      {
+        "name": "GetScenarios",
+        "type":"httpTrigger",
+        "direction":"in",
+        "methods":["get"],
+        "route": "endpoint4"
+      },
+      {
+        "name": "scenarios",
+        "type": "http",
+        "direction": "out"
       }
     ]
   }
