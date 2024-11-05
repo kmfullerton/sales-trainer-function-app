@@ -1,0 +1,16 @@
+azure-cognitiveservices-speech==1.41.1
+azure-functions==1.21.3
+certifi==2024.8.30
+charset-normalizer==3.4.0
+idna==3.10
+logger==1.4
+numpy==2.1.2
+pandas==2.2.3
+psycopg2==2.9.10
+python-dateutil==2.9.0.post0
+pytz==2024.2
+queries==2.1.1
+requests==2.32.3
+six==1.16.0
+tzdata==2024.2
+urllib3==2.2.3

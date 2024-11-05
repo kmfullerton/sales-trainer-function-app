@@ -1,0 +1,28 @@
+{
+    "bindings": [
+      {
+        "name": "MainTrigger",
+        "type": "httpTrigger",
+        "direction": "in",
+        "methods": [ "post" ],
+        "route": "endpoint1/{id}"
+      },
+      {
+        "name": "res1",
+        "type": "http",
+        "direction": "out"
+      },
+      {
+        "name": "ScoringTrigger",
+        "type": "httpTrigger",
+        "direction": "in",
+        "methods": [ "post" ],
+        "route": "endpoint2"
+      },
+      {
+        "name": "res2",
+        "type": "http",
+        "direction": "out"
+      }
+    ]
+  }
