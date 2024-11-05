@@ -28,14 +28,14 @@ def insert_llm_response_to_table(user_id, model_output):
 
 def fetch_personas_from_table():
     con = queries.uri("sales-trainer-postgres.postgres.database.azure.com", 5432, "postgres", "admin01", PWD)
-    query = f"SELECT persona_id, persona_description FROM personas;"
+    query = f"SELECT persona_id, persona_short_name, persona_description, persona_characteristics, image_file_location FROM personas;"
     with queries.Session(con) as session:
         results = session.query(query)
     return results
 
 def fetch_scenarios_from_table():
     con = queries.uri("sales-trainer-postgres.postgres.database.azure.com", 5432, "postgres", "admin01", PWD)
-    query = f"SELECT scenario_id, display_description FROM scenarios;"
+    query = f"SELECT scenario_id, actor_description, objectives, scenario_short_name, scenario_description, suggested_content FROM scenarios;"
     with queries.Session(con) as session:
         results = session.query(query)
     return results
