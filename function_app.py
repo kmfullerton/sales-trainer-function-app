@@ -13,8 +13,8 @@ def format_text_for_postgres(text):
     formatted_text = text.replace("'", "''").replace("\n", " ").replace("\r", " ").replace("\'", "'")
     return formatted_text
 
-@app.function_name("MainTrigger")
-@app.route(route="main")
+@app.function_name("inputIngestion")
+@app.route(route="inputIngestion")
 def http_trigger_to_postgres(req: func.HttpRequest) -> func.HttpResponse:
     logger.info('Python HTTP trigger function processed a request.')
 
